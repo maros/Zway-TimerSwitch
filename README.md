@@ -1,14 +1,26 @@
 # Zway-TimerSwitch
 
-This module creates a virtual multilevel switch sensor, that can be used as
-a timer switch.
+This module creates a timer switch. Users can select the active time using a
+multilevel switch widget. The switch decreases its level every 
+second/minute/hour.
 
 # Configuration
 
+## maxTime
+
+Maximum selectable timer time.
+
+## unit
+
+Time unit for timer. Seconds, minutes or hours.
+
 # Events
 
+No events are emitted.
 
 # Virtual Devices
+
+A multilevel switch device will be created.
 
 # Installation
 
@@ -22,12 +34,12 @@ recommended.
 
 ```shell
 cd /opt/z-way-server/automation/userModules
-git clone https://github.com/maros/Zway-Rain.git Rain --branch latest
+git clone https://github.com/maros/Zway-TimerSwitch.git TimerSwitch --branch latest
 ```
 
 To update or install a specific version
 ```shell
-cd /opt/z-way-server/automation/userModules/Rain
+cd /opt/z-way-server/automation/userModules/TimerSwitch
 git fetch --tags
 # For latest released version
 git checkout tags/latest
