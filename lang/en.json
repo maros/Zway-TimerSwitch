@@ -1,0 +1,9 @@
+{
+   "m_descr" : "MISSING.<br>Check <a href=https://github.com/maros/Zway-TimerSwitch/blob/master/README.md>github.com/maros/Zway-TimerSwitch</a> for detailed documentation.",
+   "m_title" : "Timer Switch",
+   "max_time_label" : "Maximum time",
+   "unit_hours" : "Hours",
+   "unit_label" : "Time unit",
+   "unit_minutes" : "Minutes",
+   "unit_seconds" : "Seconds"
+}
