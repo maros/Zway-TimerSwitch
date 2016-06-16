@@ -1,5 +1,5 @@
 {
-   "m_descr" : "MISSING .<br>Siehe <a href=https://github.com/maros/Zway-TimerSwitch/blob/master/README.md>github.com/maros/Zway-TimerSwitch</a> für detailierte Dokumentation.",
+   "m_descr" : "Erstellt eine Zeitschaltuhr. Benutzer können über Widget die Laufzeit der Zeitschaltuhr steuern. <br>Siehe <a href=https://github.com/maros/Zway-TimerSwitch/blob/master/README.md>github.com/maros/Zway-TimerSwitch</a> für detailierte Dokumentation.",
    "m_title" : "Zeitschaltuhr",
    "max_time_label" : "Maximum Laufzeit",
    "unit_hours" : "Stunden",
