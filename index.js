@@ -44,7 +44,7 @@ TimerSwitch.prototype.init = function (config) {
             metrics: {
                 min: 0,
                 max: self.config.maxTime,
-                scaleTitle: self.langFile[self.config.unit+'_unit']
+                scaleTitle: self.langFile['unit_'+self.config.unit]
             },
             probeType: 'multilevel',
             deviceType: 'switchMultilevel',
