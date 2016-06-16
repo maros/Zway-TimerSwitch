@@ -2,13 +2,13 @@
 
 This module creates a timer switch. Users can select the active time using a
 multilevel switch widget. The switch decreases its level every 
-second/minute/hour.
+second/minute/hour until it finally turns off.
 
 # Configuration
 
 ## maxTime
 
-Maximum selectable timer time.
+Maximum selectable timer value.
 
 ## unit
 
