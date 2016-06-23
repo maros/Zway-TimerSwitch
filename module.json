@@ -3,9 +3,9 @@
    "category" : "device_enhancements",
    "defaults" : {
       "description" : "__m_descr__",
+      "maxTime" : 60,
       "title" : "__m_title__",
-      "maxTime": 60,
-      "unit": "minutes"
+      "unit" : "minutes"
    },
    "dependencies" : [
       "BaseModule"
@@ -16,19 +16,19 @@
    "moduleName" : "TimerSwitch",
    "options" : {
       "fields" : {
-          "maxTime": {
-              "label": "__max_time_label__",
-              "order": 3
-          },
-          "unit": {
-              "label": "__unit_label__",
-              "order": 1,
-              "optionLabels" : [
-                  "__unit_seconds__",
-                  "__unit_minutes__",
-                  "__unit_hours__"
-               ]
-          }
+         "maxTime" : {
+            "label" : "__max_time_label__",
+            "order" : 3
+         },
+         "unit" : {
+            "label" : "__unit_label__",
+            "optionLabels" : [
+               "__unit_seconds__",
+               "__unit_minutes__",
+               "__unit_hours__"
+            ],
+            "order" : 1
+         }
       }
    },
    "repository" : {
@@ -37,21 +37,21 @@
    },
    "schema" : {
       "properties" : {
-          "maxTime": {
-              "required": true,
-              "type" : "number"
-          },
-          "unit": {
-              "enum" : [
-                "seconds",
-                "minutes",
-                "hours"
-              ]
-          }
+         "maxTime" : {
+            "required" : true,
+            "type" : "number"
+         },
+         "unit" : {
+            "enum" : [
+               "seconds",
+               "minutes",
+               "hours"
+            ]
+         }
       },
       "required" : true,
       "type" : "object"
    },
    "singleton" : true,
-   "version" : "0.99"
+   "version" : "1.00"
 }
