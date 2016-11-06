@@ -1,5 +1,5 @@
 {
-   "m_descr" : "This module creates a timer switch. Users can select the active time using a multilevel switch widget. <br>Check <a href=https://github.com/maros/Zway-TimerSwitch/blob/master/README.md>github.com/maros/Zway-TimerSwitch</a> for detailed documentation.",
+   "m_descr" : "This module creates a timer switch. Users can select the active time using a multilevel switch widget. The switch decreases its level every second/minute/hour until it finally turns off.<br>Check <a href=https://github.com/maros/Zway-TimerSwitch/blob/master/README.md>github.com/maros/Zway-TimerSwitch</a> for detailed documentation.",
    "m_title" : "Timer Switch",
    "max_time_label" : "Maximum time",
    "unit_hours" : "Hours",
