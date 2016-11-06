@@ -1,7 +1,7 @@
 # Zway-TimerSwitch
 
 This module creates a timer switch. Users can select the active time using a
-multilevel switch widget. The switch decreases its level every 
+multilevel switch widget. The switch decreases its level every
 second/minute/hour until it finally turns off.
 
 # Configuration
@@ -25,11 +25,11 @@ A multilevel switch device will be created.
 # Installation
 
 The prefered way of installing this module is via the "Zwave.me App Store"
-available in 2.2.0 and higher. For stable module releases no access token is 
-required. If you want to test the latest pre-releases use 'k1_beta' as 
+available in 2.2.0 and higher. For stable module releases no access token is
+required. If you want to test the latest pre-releases use 'k1_beta' as
 app store access token.
 
-For developers and users of older Zway versions installation via git is 
+For developers and users of older Zway versions installation via git is
 recommended.
 
 ```shell
@@ -55,7 +55,7 @@ Clock icon by Alexander Wiefel from the Noun Project
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or any 
+the Free Software Foundation, either version 3 of the License, or any
 later version.
 
 This program is distributed in the hope that it will be useful,

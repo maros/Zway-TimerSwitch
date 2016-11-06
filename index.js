@@ -12,7 +12,7 @@ Description:
 function TimerSwitch (id, controller) {
     // Call superconstructor first (AutomationModule)
     TimerSwitch.super_.call(this, id, controller);
-    
+
     this.vDev       = undefined;
     this.interval   = undefined;
 }
@@ -60,7 +60,7 @@ TimerSwitch.prototype.init = function (config) {
         },
         moduleId: this.id
     });
-    
+
     if (self.vDev.get('metrics:level') > 0) {
         self.log('Restart timer');
         self.initTimer();
@@ -69,14 +69,14 @@ TimerSwitch.prototype.init = function (config) {
 
 TimerSwitch.prototype.stop = function () {
     var self = this;
-    
+
     if (self.vDev) {
         self.controller.devices.remove(self.vDev.id);
         self.vDev = undefined;
     }
-    
+
     self.clearTimer();
-    
+
     TimerSwitch.super_.prototype.stop.call(this);
 };
 
@@ -92,7 +92,7 @@ TimerSwitch.prototype.setTimer = function(level) {
     } else if (level === self.vDev.get('metrics:level')) {
         return;
     }
-    
+
     self.log('Start timer for '+level+' '+self.config.unit);
     self.vDev.set('metrics:icon',self.imagePath+'/icon_on.png');
     self.vDev.set('metrics:level',level);
@@ -101,7 +101,7 @@ TimerSwitch.prototype.setTimer = function(level) {
 
 TimerSwitch.prototype.resetTimer = function() {
     var self = this;
-    
+
     self.log('Reset timer');
     self.vDev.set('metrics:icon',self.imagePath+'/icon_off.png');
     self.vDev.set('metrics:level',0);
@@ -110,7 +110,7 @@ TimerSwitch.prototype.resetTimer = function() {
 
 TimerSwitch.prototype.clearTimer = function() {
     var self = this;
-    
+
     if (typeof(self.interval) !== 'undefined') {
         clearInterval(self.interval);
         self.interval = undefined;
@@ -119,14 +119,14 @@ TimerSwitch.prototype.clearTimer = function() {
 
 TimerSwitch.prototype.initTimer = function() {
     var self = this;
-    
+
     self.clearTimer();
-    
+
     var timer = 1000;
     if (self.config.unit === 'minutes') {
         timer = timer * 60;
     } else if (self.config.unit === 'hours') {
-        timer = timer * 60 * 60; 
+        timer = timer * 60 * 60;
     }
     self.interval = setInterval(function() {
         var level = self.vDev.get('metrics:level');
